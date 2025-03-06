@@ -386,7 +386,7 @@ def rotate(pos_rcv: np.ndarray, x_angle: Optional[float] = None, y_angle: Option
     return pos_rcv
 
 
-def generate_4points_sin_trajectory(
+def generate_4points_sin_trajectory( # 被generate_rir_cfg_list调用
         room_sz: Union[List[float], np.ndarray],  # the size of room
         rcv_pos: np.ndarray,  # [N, 3]
         min_src_array_dist: np.ndarray,  # [3]
