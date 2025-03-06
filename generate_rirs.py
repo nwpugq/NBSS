@@ -762,7 +762,7 @@ def generate_rir_cfg_list(
     return par
 
 
-def __gen__(par, fs, use_gpu, train_rir_num, val_rir_num, rir_dir, attn_diff_speech, attn_max, attn_diff_noise, split_trajectory):
+def __gen__(par, fs, use_gpu, train_rir_num, val_rir_num, rir_dir, attn_diff_speech, attn_max, attn_diff_noise, split_trajectory): # 被generate_rir_files调用
     index = par['index']
     RT60 = par['RT60']
     room_sz = par['room_sz']
