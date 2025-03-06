@@ -197,6 +197,7 @@ def normalize(vec: np.ndarray) -> np.ndarray:
     assert np.isclose(norm(vec), 1), 'norm of vec is not close to 1'
     return vec
 
+# 从这里开始，到之后的函数，都被generate_rir_cfg_list调用
 
 def plot_room(room_sz: Union[List[float], np.ndarray], pos_src: np.ndarray, pos_rcv: np.ndarray, pos_noise: np.ndarray, saveto: str = None) -> None:
     import matplotlib.pyplot as plt
